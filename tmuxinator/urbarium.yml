@@ -1,0 +1,15 @@
+# /Users/emmanuel.mora/.tmuxinator/urbarium.yml
+
+name: URBARIUM
+root: ~/dev/urbarium-admin-react
+
+windows:
+  - test:
+      layout: main-vertical
+      panes:
+        - cypress open & npm test
+        - npm start
+        - watch git status
+  - tig:
+      panes:
+        - tig
